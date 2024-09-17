@@ -1,0 +1,185 @@
+*{
+    overflow-x: clip;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:  90vh;
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @media only screen and (max-width: 600px) {
+    .banner {
+      height: 120vh;
+    }
+    .connect{
+      margin-bottom: 50px;
+    }
+  }
+  
+  .banner .tagline {
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    padding: 8px 10px;
+    font-size: 20px;
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+  .banner h1 {
+    font-size: 65px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .banner p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
+  }
+  .banner button {
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 60px;
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+  }
+  .banner button svg {
+    font-size: 25px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+  }
+  .banner button:hover svg {
+    margin-left: 25px;
+  }
+  .bannerImage{
+    background-image: url('https://i.pinimg.com/originals/42/5b/81/425b811084dd2421c1df0fbe7576d883.gif');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px ;
+
+
+  }
+  .banner img {
+    
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    animation: updown 3s linear infinite;
+  }
+  @keyframes updown {
+      0% {
+          transform: translateX(-30px);
+      }
+      50% {
+          transform: translateX(20px);
+      }
+      100% {
+          transform: translateX(-20px);
+      }
+  }
+  .txt-rotate > .wrap {
+    border-right: 0.08em solid #666;
+  }
+  
+
+
+  .stepsCard{
+    width: 18rem;
+    height: 250px;
+    margin: 0 2rem;
+    padding: 30px 60px;
+    background: rgba(0, 0, 0,  0.7);
+    border: 3px solid rgba(214, 193, 193, 0.2);
+    border-radius: 2rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    color: white;
+    transition: 0.4s ease-in-out;
+    font-weight: 700;
+    font-size: 20px;
+    box-shadow: 0 0 10px ;
+
+
+  }
+
+  .stepsCard:hover{
+    border: 3px solid rgba(204, 43, 43, 0.7);
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 50px var(--main-color);
+  }
+
+  .FormWrapper{
+    background-image: url('https://i.pinimg.com/originals/42/5b/81/425b811084dd2421c1df0fbe7576d883.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height :90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .GrivanceForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+/*     background: white;
+ */    box-shadow: 0 0 20px ;
+/*     background-image: linear-gradient(to right, rgb(241, 237, 237) , rgb(168, 168, 162));
+ */    }
+
+ .aboutusHeading{
+  text-shadow: 2px 2px 3px #FF0000;
+ }
+ .aboutimage img{
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  opacity: 1;
+  animation: fade 1s infinite;
+ }
+
+ @keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+
+.outerdiv{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: black;
+  border: white solid 2px;
+}
+.mission{
+  opacity: 1;
+  animation: fade 2s infinite;
+  text-shadow: 2px 2px 3px #FF0000;
+
+}
+.innerDiv{
+  height: 150px;
+
+  border: white solid 2px;
+  border-left: black;
+  border-right: black;
+
+
+}
